@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lar & Chave Imobiliária</title>
+  <meta name="description" content="Casas e apartamentos para comprar ou alugar.">
+  <meta name="theme-color" content="#14324a">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="casa" viewBox="0 0 120 80">
+      <path d="M10 40 60 8l50 32v4H10z" fill="currentColor" opacity=".55"/>
+      <rect x="22" y="42" width="76" height="32" fill="currentColor"/>
+      <rect x="52" y="52" width="16" height="22" fill="#fff"/>
+      <rect x="28" y="50" width="14" height="12" fill="#fff"/>
+      <rect x="78" y="50" width="14" height="12" fill="#fff"/>
+    </symbol>
+    <symbol id="predio" viewBox="0 0 120 80">
+      <rect x="34" y="6" width="52" height="68" fill="currentColor"/>
+      <g fill="#fff">
+        <rect x="42" y="14" width="10" height="9"/><rect x="68" y="14" width="10" height="9"/>
+        <rect x="42" y="30" width="10" height="9"/><rect x="68" y="30" width="10" height="9"/>
+        <rect x="42" y="46" width="10" height="9"/><rect x="68" y="46" width="10" height="9"/>
+        <rect x="54" y="60" width="12" height="14"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <header class="topo">
+    <h1>Lar &amp; Chave</h1>
+    <p>Imobiliária em São Paulo</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Encontre o imóvel certo para você</h2>
+      <p>Veja os imóveis disponíveis e fale com um corretor pelo WhatsApp.</p>
+    </section>
+
+    <div class="filtros" role="group" aria-label="Filtrar imóveis">
+      <button class="filtro ativo" data-tipo="todos">Todos</button>
+      <button class="filtro" data-tipo="casa">Casas</button>
+      <button class="filtro" data-tipo="apartamento">Apartamentos</button>
+    </div>
+
+    <section class="vitrine" id="vitrine">
+      <article class="imovel" data-tipo="casa">
+        <div class="foto verde"><svg><use href="#casa"/></svg></div>
+        <div class="info">
+          <h3>Casa com quintal</h3>
+          <p class="local">Vila Mariana</p>
+          <p class="detalhes">3 quartos · 2 vagas · 180 m²</p>
+          <p class="preco">R$ 980.000</p>
+          <a class="botao" href="https://wa.me/5511999999999?text=Tenho%20interesse%20na%20Casa%20com%20quintal" target="_blank" rel="noopener">Falar com corretor</a>
+        </div>
+      </article>
+
+      <article class="imovel" data-tipo="apartamento">
+        <div class="foto azul"><svg><use href="#predio"/></svg></div>
+        <div class="info">
+          <h3>Apartamento perto do metrô</h3>
+          <p class="local">Santana</p>
+          <p class="detalhes">2 quartos · 1 vaga · 62 m²</p>
+          <p class="preco">R$ 2.400 /mês</p>
+          <a class="botao" href="https://wa.me/5511999999999?text=Tenho%20interesse%20no%20Apartamento%20em%20Santana" target="_blank" rel="noopener">Falar com corretor</a>
+        </div>
+      </article>
+
+      <article class="imovel" data-tipo="casa">
+        <div class="foto ambar"><svg><use href="#casa"/></svg></div>
+        <div class="info">
+          <h3>Sobrado em condomínio</h3>
+          <p class="local">Granja Viana</p>
+          <p class="detalhes">4 quartos · 3 vagas · 240 m²</p>
+          <p class="preco">R$ 1.450.000</p>
+          <a class="botao" href="https://wa.me/5511999999999?text=Tenho%20interesse%20no%20Sobrado%20na%20Granja%20Viana" target="_blank" rel="noopener">Falar com corretor</a>
+        </div>
+      </article>
+
+      <article class="imovel" data-tipo="apartamento">
+        <div class="foto verde"><svg><use href="#predio"/></svg></div>
+        <div class="info">
+          <h3>Studio mobiliado</h3>
+          <p class="local">Pinheiros</p>
+          <p class="detalhes">1 quarto · 28 m²</p>
+          <p class="preco">R$ 3.100 /mês</p>
+          <a class="botao" href="https://wa.me/5511999999999?text=Tenho%20interesse%20no%20Studio%20em%20Pinheiros" target="_blank" rel="noopener">Falar com corretor</a>
+        </div>
+      </article>
+
+      <article class="imovel" data-tipo="apartamento">
+        <div class="foto ambar"><svg><use href="#predio"/></svg></div>
+        <div class="info">
+          <h3>Apartamento com varanda</h3>
+          <p class="local">Tatuapé</p>
+          <p class="detalhes">3 quartos · 2 vagas · 98 m²</p>
+          <p class="preco">R$ 720.000</p>
+          <a class="botao" href="https://wa.me/5511999999999?text=Tenho%20interesse%20no%20Apartamento%20no%20Tatuap%C3%A9" target="_blank" rel="noopener">Falar com corretor</a>
+        </div>
+      </article>
+
+      <article class="imovel" data-tipo="casa">
+        <div class="foto azul"><svg><use href="#casa"/></svg></div>
+        <div class="info">
+          <h3>Casa térrea para alugar</h3>
+          <p class="local">Jabaquara</p>
+          <p class="detalhes">2 quartos · 1 vaga · 90 m²</p>
+          <p class="preco">R$ 2.900 /mês</p>
+          <a class="botao" href="https://wa.me/5511999999999?text=Tenho%20interesse%20na%20Casa%20t%C3%A9rrea%20no%20Jabaquara" target="_blank" rel="noopener">Falar com corretor</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Lar &amp; Chave Imobiliária · Projeto PWA – Etec</p>
+    <p id="status-rede" aria-live="polite"></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
